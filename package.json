@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
     "concurrently": "^8.2.2",
+    "inotebook": "file:",
     "jsonwebtoken": "^9.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,14 +40,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
+  },
   "devDependencies": {
     "@babel/core": "7.22.5",
     "@babel/eslint-parser": "7.22.5",
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@babel/preset-env": "7.22.5"
-},
+  },
   "plugins": [
-  ["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
-]
+    [
+      "@babel/plugin-proposal-private-property-in-object",
+      {
+        "loose": true
+      }
+    ]
+  ]
 }

@@ -12,6 +12,7 @@ import NoteState from './context/notes/NoteState';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import { useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -30,7 +31,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Alert alert={alert}/>
-      <div className="container">
+      <div className="container d-flex flex-column min-vh-100">
       <Routes>
         <Route exact path="/" element={<Home showAlert={showAlert}/>} />
         <Route exact path="/about" element={<About />} />
@@ -38,7 +39,9 @@ function App() {
         <Route exact path="/signup" element={<Signup showAlert={showAlert}/>} />
       </Routes>
       </div>
+      <Footer/>
     </BrowserRouter>
+
     </>
     </NoteState>
   );

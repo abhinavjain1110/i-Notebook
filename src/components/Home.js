@@ -5,7 +5,7 @@ import Notes from "./Notes";
 const Home = (props) => {
   const {showAlert}=props
   return (
-    <div>
+    <div className="d-flex flex-column min-vh-100"> 
       
       <Notes showAlert={showAlert}/>
     </div>
